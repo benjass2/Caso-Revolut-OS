@@ -1,12 +1,14 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import {Toolbar} from './shared/presentation/components/toolbar/toolbar';
+import {Footer} from './shared/presentation/components/footer/footer';
+import {CreditCardTransactions} from './creditcard/presentation/views/credit-card-transactions/credit-card-transactions';
 
 @Component({
-  imports: [RouterOutlet],
+  imports: [Toolbar,Footer,CreditCardTransactions],
   selector: 'app-root',
   styleUrl: './app.css',
   templateUrl: './app.html',
 })
 export class App {
-  protected readonly title = signal('PC1-Revolut');
+  title='Revolut Open Banking';
 }

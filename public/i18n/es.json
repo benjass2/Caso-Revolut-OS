@@ -1,0 +1,15 @@
+{
+  "TOOLBAR": {
+    "TITTLE": "Revolut Banca Abierta"
+  },
+  "TRANSACTIONS": {
+    "VIEW_TITLE": "Transacciones de Tarjeta de Credito",
+    "INSTALLMENTS": "Cuotas Totales",
+    "SCHEDULE": "Cronograma",
+    "AMOUNT": "Monto"
+  },
+  "FOOTER":{
+    "COPYRIGHT": "Copyright © 2025 Revolut Open Banking. Todos los derechos reservados.",
+    "DEVELOPED_BY": "Desarrollado por"
+  }
+}

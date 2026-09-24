@@ -1,0 +1,15 @@
+{
+  "TOOLBAR": {
+    "TITLE": "Revolut Open Banking"
+  },
+  "TRANSACTIONS": {
+    "VIEW_TITLE": "Credit Card Transactions",
+    "INSTALLMENTS": "Total Installments",
+    "SCHEDULE": "Schedule",
+    "AMOUNT": "Amount"
+  },
+  "FOOTER":{
+    "COPYRIGHT": "Copyright © 2025 Revolut Open Banking. All rights reserved.",
+    "DEVELOPED_BY": "Developed by"
+  }
+}

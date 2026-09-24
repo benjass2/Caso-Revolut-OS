@@ -1,0 +1,30 @@
+<mat-card class="transaction-card">
+  <mat-card-header>
+    <div mat-card-avatar class="card-avatar">
+      <mat-icon color="primary">credit_card</mat-icon>
+    </div>
+    <div class="card-number-header">
+      {{transaction.cardNumber}}
+    </div>
+    <mat-card-title>{{transaction.merchantName}}</mat-card-title>
+    <mat-card-subtitle>{{transaction.productDetails}}</mat-card-subtitle>
+  </mat-card-header>
+
+  <mat-card-content class="card-content">
+    <p>
+      <strong>{{'TRANSACTIONS.INSTALLMENTS'|translate}}</strong>
+      <span>{{transaction.totalInstallments}}</span>
+    </p>
+    <p>
+      <strong>{{'TRANSACTIONS.SCHEDULE' | translate}}</strong>
+      <span>{{transaction.schedule}}</span>
+    </p>
+  </mat-card-content>
+
+  <mat-divider></mat-divider>
+
+  <mat-card-footer class="card-footer">
+    <span>{{transaction.transactionDate}}</span>
+    <span>{{transaction.currency}}{{transaction.amount|number:'1.2-2'}}</span>
+  </mat-card-footer>
+</mat-card>

@@ -1,0 +1,43 @@
+<section class="transaction-container">
+  <h1 class="view-title">{{'TRANSACTIONS.VIEW_TITLE' | translate}}</h1>
+
+  @if(store.isLoading()){
+    <div class="spinner-container">
+      <mat-progress-spinner></mat-progress-spinner>
+    </div>
+  }
+
+  @if(store.errorMessage()){
+    <div class="error-message">
+      {{store.errorMessage()}}
+    </div>
+  }
+
+  @if(!store.isLoading() && store.transactions().length>0){
+    <div class="cards-grid">
+      @for (item of store.transactions() ; track item.id) {
+        <app-transaction-card [transaction]="item"></app-transaction-card>
+      }
+    </div>
+  }
+
+  @if(!store.isLoading() && store.transactions().length===0 && !store.errorMessage){
+    <p class="empty-message">No transactions found</p>
+  }
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

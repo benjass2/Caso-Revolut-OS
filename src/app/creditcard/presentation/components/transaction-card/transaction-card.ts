@@ -5,10 +5,10 @@ import {Transaction} from '../../../domain/model/transaction.entity';
 import {MatIcon} from '@angular/material/icon';
 import {TranslatePipe} from '@ngx-translate/core';
 import {MatDivider} from '@angular/material/list';
-import {DecimalPipe} from '@angular/common';
+import {DecimalPipe, JsonPipe} from '@angular/common';
 
 @Component({
-  imports: [MatButtonModule, MatCardModule, MatIcon, TranslatePipe, MatDivider, DecimalPipe],
+  imports: [MatButtonModule, MatCardModule, MatIcon, TranslatePipe, MatDivider, DecimalPipe, JsonPipe],
   selector: 'app-transaction-card',
   styleUrl: './transaction-card.css',
   templateUrl: './transaction-card.html',

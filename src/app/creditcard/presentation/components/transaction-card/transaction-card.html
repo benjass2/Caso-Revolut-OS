@@ -7,7 +7,7 @@
       {{transaction.cardNumber}}
     </div>
     <mat-card-title>{{transaction.merchantName}}</mat-card-title>
-    <mat-card-subtitle>{{transaction.productDetails}}</mat-card-subtitle>
+    <mat-card-subtitle>{{transaction.productDetails?.description}}</mat-card-subtitle>
   </mat-card-header>
 
   <mat-card-content class="card-content">
@@ -17,7 +17,7 @@
     </p>
     <p>
       <strong>{{'TRANSACTIONS.SCHEDULE' | translate}}</strong>
-      <span>{{transaction.schedule}}</span>
+      <span>{{transaction.schedule?.paymentDate}}</span>
     </p>
   </mat-card-content>
 
@@ -25,6 +25,6 @@
 
   <mat-card-footer class="card-footer">
     <span>{{transaction.transactionDate}}</span>
-    <span>{{transaction.currency}}{{transaction.amount|number:'1.2-2'}}</span>
+    <span>{{transaction.currency}} {{transaction.amount|number:'1.2-2'}}</span>
   </mat-card-footer>
 </mat-card>

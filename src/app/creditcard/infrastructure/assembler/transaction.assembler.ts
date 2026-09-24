@@ -5,7 +5,7 @@ import {Transaction} from '../../domain/model/transaction.entity';
 export class TransactionAssembler{
   public static toEntityFromResource(resource:TransactionResource):Transaction{
     return new Transaction(
-      resource.id,
+      resource.id ?? resource.cardNumber,
       resource.cardNumber,
       resource.merchantName,
       resource.productDetails,
